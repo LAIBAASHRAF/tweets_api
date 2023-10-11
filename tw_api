@@ -21,3 +21,20 @@ public_tweets=api.home_timeline()
 # print(public_tweets)
 for tweet in public_tweets:
     print(tweet.txt)
+
+
+#Output:
+C:/Users/bcm/AppData/Local/Programs/Python/Python310/python.exe e:/User/Twitter_sentiment/Twitter_api.py
+Traceback (most recent call last):
+  File "e:\User\Twitter_sentiment\Twitter_api.py", line 20, in <module>
+    public_tweets=api.home_timeline()
+  File "C:\Users\bcm\AppData\Local\Programs\Python\Python310\lib\site-packages\tweepy\api.py", line 33, in wrapper
+    return method(*args, **kwargs)
+  File "C:\Users\bcm\AppData\Local\Programs\Python\Python310\lib\site-packages\tweepy\api.py", line 46, in wrapper
+    return method(*args, **kwargs)
+  File "C:\Users\bcm\AppData\Local\Programs\Python\Python310\lib\site-packages\tweepy\api.py", line 331, in home_timeline
+    return self.request(
+  File "C:\Users\bcm\AppData\Local\Programs\Python\Python310\lib\site-packages\tweepy\api.py", line 267, in request
+    raise BadRequest(resp)
+tweepy.errors.BadRequest: 400 Bad Request
+215 - Bad Authentication data.
